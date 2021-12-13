@@ -14,6 +14,7 @@
           box-shadow: 3px 4px 6px 5px rgba(0, 0, 0, 0.349);
   background-color: rgba(20, 49, 141, 0.459);
   border-radius: 30px;
+  min-width: 800px;
 }
 
 .timerContainer {
@@ -28,6 +29,7 @@
           box-shadow: 3px 4px 6px 5px rgba(0, 0, 0, 0.349);
   background-color: rgba(20, 49, 141, 0.459);
   border-radius: 30px;
+  min-width: 800px;
 }
 
 .timerDescription {
@@ -62,6 +64,7 @@
           box-shadow: 3px 4px 6px 5px rgba(0, 0, 0, 0.349);
   background-color: rgba(20, 49, 141, 0.459);
   border-radius: 30px;
+  min-width: 800px;
   border-radius: 20px;
   min-width: 600px;
   width: 80%;
@@ -110,6 +113,7 @@
           box-shadow: 3px 4px 6px 5px rgba(0, 0, 0, 0.349);
   background-color: rgba(20, 49, 141, 0.459);
   border-radius: 30px;
+  min-width: 800px;
   width: 80%;
   margin-left: 10%;
   border-radius: 20px;
@@ -142,6 +146,7 @@
           box-shadow: 3px 4px 6px 5px rgba(0, 0, 0, 0.349);
   background-color: rgba(20, 49, 141, 0.459);
   border-radius: 30px;
+  min-width: 800px;
 }
 
 .uploaderText {
@@ -195,6 +200,7 @@
           box-shadow: 3px 4px 6px 5px rgba(0, 0, 0, 0.349);
   background-color: rgba(20, 49, 141, 0.459);
   border-radius: 30px;
+  min-width: 800px;
   width: 80%;
   margin-left: 5%;
   padding: 5%;
@@ -343,6 +349,17 @@
   background-color: white;
 }
 
+.animations p {
+  text-align: left;
+}
+
+.btnSpacing {
+  height: 5px;
+  width: 100%;
+  background-color: black;
+  margin: 250px 0;
+}
+
 .btnWallpaper {
   height: 100%;
   -webkit-transform: scale(2.5);
@@ -361,6 +378,7 @@
 .btnWallpaperContainer {
   height: 400px;
   width: 300px;
+  margin-bottom: 210px;
   overflow: hidden;
   cursor: pointer;
   margin-left: auto;
@@ -374,8 +392,8 @@
 
 .imgZoomedOut {
   height: 100%;
-  -webkit-transform: scale(2.5);
-          transform: scale(2.5);
+  -webkit-transform: scale(2.5) translateX(20%) translateY(5%);
+          transform: scale(2.5) translateX(20%) translateY(5%);
   -webkit-transition: -webkit-transform .5s ease;
   transition: -webkit-transform .5s ease;
   transition: transform .5s ease;
@@ -408,6 +426,150 @@
   opacity: 1;
 }
 
+.wallpaperLeftUI {
+  position: absolute;
+  height: 434px;
+  margin-top: 10px;
+  margin-left: 221px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+#wallpaperLeftOut {
+  margin-left: -185px;
+}
+
+.wallpaperRightUI {
+  position: absolute;
+  height: 434px;
+  margin-top: 10px;
+  margin-left: 510px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+#wallpaperRightOut {
+  margin-left: 917px;
+}
+
+.wallpaperTopUI {
+  position: absolute;
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  width: 310px;
+  margin-left: 240px;
+  margin-top: 5px;
+}
+
+.wallpaperTopUI2 {
+  position: absolute;
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+  width: 310px;
+  margin-left: 240px;
+  margin-top: 5px;
+}
+
+#wallpaperTopOut {
+  margin-top: -205px;
+}
+
+.wallpaperBottomUI {
+  position: absolute;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  width: 310px;
+  margin-left: 240px;
+  margin-top: 404px;
+}
+
+.wallpaperBottomUI2 {
+  position: absolute;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+  width: 310px;
+  margin-left: 240px;
+  margin-top: 404px;
+}
+
+#wallpaperBottomOut {
+  margin-top: 598px;
+}
+
+.wallpaperTopLeftUI {
+  position: absolute;
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  width: 157px;
+  margin-left: 240px;
+  margin-top: 4px;
+}
+
+#wallpaperTopLeftOut {
+  margin-top: -205px;
+  margin-left: 100px;
+}
+
+.wallpaperTopRightUI {
+  position: absolute;
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  width: 157px;
+  margin-left: 394px;
+  margin-top: 4px;
+}
+
+#wallpaperTopRightOut {
+  margin-top: -205px;
+  margin-left: 534px;
+}
+
+.wallpaperBottomLeftUI {
+  position: absolute;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  width: 157px;
+  margin-left: 240px;
+  margin-top: 420px;
+}
+
+#wallpaperBottomLeftOut {
+  margin-top: 598px;
+  margin-left: 100px;
+}
+
+.wallpaperBottomRightUI {
+  position: absolute;
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  width: 157px;
+  margin-left: 394px;
+  margin-top: 420px;
+}
+
+#wallpaperBottomRightOut {
+  margin-top: 598px;
+  margin-left: 534px;
+}
+
 .App {
   background-image: -webkit-gradient(linear, left top, right top, from(#6e6e6e), to(#3d3d3d));
   background-image: linear-gradient(to right, #6e6e6e, #3d3d3d);
@@ -428,6 +590,7 @@
           box-shadow: 3px 4px 6px 5px rgba(0, 0, 0, 0.349);
   background-color: rgba(20, 49, 141, 0.459);
   border-radius: 30px;
+  min-width: 800px;
 }
 
 .pageParaText {
@@ -441,6 +604,7 @@
           box-shadow: 3px 4px 6px 5px rgba(0, 0, 0, 0.349);
   background-color: rgba(20, 49, 141, 0.459);
   border-radius: 30px;
+  min-width: 800px;
 }
 
 .exampleImg {

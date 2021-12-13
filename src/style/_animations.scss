@@ -9,6 +9,7 @@
     margin: 250px 0;
 }
 
+// Wallpaper
 .btnWallpaper {
     height: 100%;
     transform: scale(2.5);
@@ -43,6 +44,7 @@
     transform: scale(1);
 }
 
+// Logo
 .logoZoomedIn {
     width: 200px;
     transition: transform .5s ease, opacity .5s ease;
@@ -59,6 +61,7 @@
     opacity: 1;
 }
 
+// Wallpaper UI
 .wallpaperLeftUI {
     position: absolute;
     height: 434px;
@@ -68,7 +71,7 @@
 }
 
 #wallpaperLeftOut {
-    margin-left: -185px;
+    margin-left: -410px;
 }
 
 .wallpaperRightUI {
@@ -81,7 +84,7 @@
 }
 
 #wallpaperRightOut {
-    margin-left: 917px;
+    margin-left: 1182px;
 }
 
 .wallpaperTopUI {
@@ -183,4 +186,22 @@
 #wallpaperBottomRightOut {
     margin-top: 598px;
     margin-left: 534px;
+}
+
+// Wallpaper background
+.wallpaperBackgroundTop {
+    position: absolute;
+    width: 0px;
+    height: 350px;
+    background-color: red;
+    border-radius: 5px;
+    margin: 52px 0 0 480px;
+    transition: all .5s ease;
+    transition-delay: .0s;
+}
+
+#wallpaperBackgroundTopOut {
+    width: 620px;
+    margin: 52px 0 0 -140px;
+    transition-delay: .2s;
 }

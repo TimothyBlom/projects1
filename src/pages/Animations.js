@@ -12,6 +12,7 @@ const Animations = () => {
     const [imgIsZoomed3, setImgIsZoomed3] = useState(false);
     const [imgIsZoomed4, setImgIsZoomed4] = useState(false);
     const [imgIsZoomed5, setImgIsZoomed5] = useState(false);
+    const [imgIsZoomed6, setImgIsZoomed6] = useState(false);
 
     const zoomedImg1 = () => {
         setImgIsZoomed1(!imgIsZoomed1);
@@ -31,6 +32,10 @@ const Animations = () => {
 
     const zoomedImg5 = () => {
         setImgIsZoomed5(!imgIsZoomed5);
+    };
+
+    const zoomedImg6 = () => {
+        setImgIsZoomed6(!imgIsZoomed6);
     };
 
     return (
@@ -109,6 +114,29 @@ const Animations = () => {
                         <img className="logoZoomedIn" src={logo} id={imgIsZoomed5 ? "logoZoomedOut" : "" } />
                         <img className="imgZoomedOut" src={wallpaper} id={imgIsZoomed5 ? "imgZoomedIn" : "" } />
                     </div>
+                </div>
+
+                <div className="btnSpacing">
+                    <p>Image zoom with borders and backgrounds</p>
+                </div>
+                <div>
+
+                    <div className='wallpaperBackgroundTop' id={imgIsZoomed6 ? "wallpaperBackgroundTopOut" : "" } />
+
+                    <img className="wallpaperTopLeftUI" src={wallpaperHorizontalHalfUI} id={imgIsZoomed6 ? "wallpaperTopLeftOut" : "" } />
+                    <img className="wallpaperTopRightUI" src={wallpaperHorizontalHalfUI} id={imgIsZoomed6 ? "wallpaperTopRightOut" : "" } />
+                    <img className="wallpaperBottomLeftUI" src={wallpaperHorizontalHalfUI} id={imgIsZoomed6 ? "wallpaperBottomLeftOut" : "" } />
+                    <img className="wallpaperBottomRightUI" src={wallpaperHorizontalHalfUI} id={imgIsZoomed6 ? "wallpaperBottomRightOut" : "" } />
+
+                    <img className="wallpaperRightUI" src={wallpaperVerticalUI} id={imgIsZoomed6 ? "wallpaperRightOut" : "" } />
+                    <img className="wallpaperLeftUI" src={wallpaperVerticalUI} id={imgIsZoomed6 ? "wallpaperLeftOut" : "" } />
+
+                    <img className="wallpaperContainerUI" src={wallpaperUI} />
+                    <div className="btnWallpaperContainer" onClick={zoomedImg6}>
+                        <img className="logoZoomedIn" src={logo} id={imgIsZoomed6 ? "logoZoomedOut" : "" } />
+                        <img className="imgZoomedOut" src={wallpaper} id={imgIsZoomed6 ? "imgZoomedIn" : "" } />
+                    </div>
+
                 </div>
 
             </div>
