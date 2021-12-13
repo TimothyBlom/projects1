@@ -1,0 +1,45 @@
+.codexContainer {
+    width: 90%;
+    margin-left: 5%;
+    min-height: 1000px;
+    background-color: rgb(91, 145, 98);
+}
+
+.codexNav {
+    width: 90%;
+}
+
+.codexSubNav {
+    width: 120px;
+    margin: 200px;
+    background-color: darkblue;
+    position: absolute;
+}
+
+.textContainer {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.codexTopImg {
+    width: 50%;
+    background-color: white;
+    margin: 50px;
+    float: center;
+}
+
+.codexFacts {
+    width: 40%;
+    max-width: 400px;
+    height: 500px;
+    margin: 50px;
+    background-color: white;
+    float: left;
+}
+
+.codexText {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 100px;
+    background-color: rgb(255, 255, 255);
+}

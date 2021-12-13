@@ -1,0 +1,186 @@
+.animations p {
+    text-align: left;
+}
+
+.btnSpacing {
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    margin: 250px 0;
+}
+
+.btnWallpaper {
+    height: 100%;
+    transform: scale(2.5);
+    transition: transform .5s ease;
+    &:hover {
+        transform: scale(1);
+    }
+}
+
+.btnWallpaperContainer {
+    height: 400px;
+    width: 300px;
+    margin-bottom: 210px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wallpaperContainerUI {
+    width: 790px;
+    margin-bottom: -427px;
+}
+
+.imgZoomedOut {
+    height: 100%;
+    transform: scale(2.5) translateX(20%) translateY(5%);
+    transition: transform .5s ease;
+}
+
+#imgZoomedIn {
+    transform: scale(1);
+}
+
+.logoZoomedIn {
+    width: 200px;
+    transition: transform .5s ease, opacity .5s ease;
+    position: absolute;
+    z-index: 1;
+    margin-top: 275px;
+    margin-left: 50px;
+    opacity: 0.8;
+}
+
+#logoZoomedOut {
+    transform: scale(1.5);
+    filter: drop-shadow(5px 5px 5px #222);
+    opacity: 1;
+}
+
+.wallpaperLeftUI {
+    position: absolute;
+    height: 434px;
+    margin-top: 10px;
+    margin-left: 221px;
+    transition: all .5s ease;
+}
+
+#wallpaperLeftOut {
+    margin-left: -185px;
+}
+
+.wallpaperRightUI {
+    position: absolute;
+    height: 434px;
+    margin-top: 10px;
+    margin-left: 510px;
+    transform: scaleX(-1);
+    transition: all .5s ease;
+}
+
+#wallpaperRightOut {
+    margin-left: 917px;
+}
+
+.wallpaperTopUI {
+    position: absolute;
+    transform: scaleY(-1);
+    transition: all .5s ease;
+    width: 310px;
+    margin-left: 240px;
+    margin-top: 5px;
+}
+
+.wallpaperTopUI2 {
+    position: absolute;
+    transform: scaleY(-1);
+    transition: all .5s ease;
+    transition-delay: .3s;
+    width: 310px;
+    margin-left: 240px;
+    margin-top: 5px;
+}
+
+#wallpaperTopOut {
+    margin-top: -205px;
+}
+
+.wallpaperBottomUI {
+    position: absolute;
+    transition: all .5s ease;
+    width: 310px;
+    margin-left: 240px;
+    margin-top: 404px;
+}
+
+.wallpaperBottomUI2 {
+    position: absolute;
+    transition: all .5s ease;
+    transition-delay: .3s;
+    width: 310px;
+    margin-left: 240px;
+    margin-top: 404px;
+}
+
+#wallpaperBottomOut {
+    margin-top: 598px;
+}
+
+//Moving corner horizontal UI borders 
+.wallpaperTopLeftUI {
+    position: absolute;
+    transform: scale(1, -1);
+    transition: all .5s ease;
+    width: 157px;
+    margin-left: 240px;
+    margin-top: 4px;
+}
+
+#wallpaperTopLeftOut {
+    margin-top: -205px;
+    margin-left: 100px;
+}
+
+.wallpaperTopRightUI {
+    position: absolute;
+    transform: scale(-1, -1);
+    transition: all .5s ease;
+    width: 157px;
+    margin-left: 394px;
+    margin-top: 4px;
+}
+
+#wallpaperTopRightOut {
+    margin-top: -205px;
+    margin-left: 534px;
+}
+
+.wallpaperBottomLeftUI {
+    position: absolute;
+    transform: scale(1, 1);
+    transition: all .5s ease;
+    width: 157px;
+    margin-left: 240px;
+    margin-top: 420px;
+}
+
+#wallpaperBottomLeftOut {
+    margin-top: 598px;
+    margin-left: 100px;
+}
+
+.wallpaperBottomRightUI {
+    position: absolute;
+    transform: scale(-1, 1);
+    transition: all .5s ease;
+    width: 157px;
+    margin-left: 394px;
+    margin-top: 420px;
+}
+
+#wallpaperBottomRightOut {
+    margin-top: 598px;
+    margin-left: 534px;
+}

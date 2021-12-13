@@ -1,0 +1,64 @@
+@import "./variables";
+
+.addImgBtn {
+    margin-top: 100px;
+    margin-bottom: 25px;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+.uploadPreviewContainer {
+    @include popDiv;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 20px;
+    padding: 75px 25px;
+    height: 575px;
+    font-size: 30px;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+.uploaderImageContainer {
+    height: 400px;
+    margin-bottom: 115px;
+}
+
+.uploaderImage {
+    max-height: 400px;
+    max-width: 100%;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+.textContainer {
+    height: 50px;
+    position: absolute;
+    padding: 10px 20px;
+    @include popDiv;
+}
+
+.uploaderText {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.uploaderName {
+    left: 550px;
+    margin-top: 0px;
+    // max-width: 1000px;
+}
+
+.uploaderTime {
+    width: 500px;
+}
+
+.uploaderHour {
+    float: left; 
+    margin-top: 0px;
+}
+
+.uploaderMinute {
+    float: left;
+    margin-top: 0px;
+} 
