@@ -43,7 +43,7 @@ const Animations = () => {
         <div class='animations'>
 
             <p className="pageHeaderText">
-                Cool button animations
+                Cool animation for opening an project file, developed step by step
             </p>
 
             <div className="pageParaText">

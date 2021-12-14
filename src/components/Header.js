@@ -16,49 +16,52 @@ const Header = () => {
             <div className="header">
 
                 <Swiper className="headerSwiper"
-                    slidesPerView={4}
+                    slidesPerView={5}
                     centeredSlides={true}
-                    navigation
                     pagination={{ clickable: true }}
                     pagination
                     grabCursor={true}
                     loop={true}
                 >
 
-                    <SwiperSlide className='routingButtonsContainer'>
-                        <Link className='routingButtons' to='/Countdown'>Countdown</Link>
+                    <SwiperSlide>
+                        <Link className='routingButtons' to='/Countdown'><p>Countdown</p></Link>
                     </SwiperSlide>
 
-                    <SwiperSlide className='routingButtonsContainer'>
-                        <Link className='routingButtons' to='/ImgUploader'>Image Uploader</Link>
+                    <SwiperSlide>
+                        <Link className='routingButtons' to='/ImgUploader'><p>Image Uploader</p></Link>
                     </SwiperSlide>
 
-                    <SwiperSlide className='routingButtonsContainer'>
-                        <Link className='routingButtons' to='/ApiList'>API Lists</Link>
+                    <SwiperSlide>
+                        <Link className='routingButtons' to='/ApiList'><p>API Lists</p></Link>
                     </SwiperSlide>
 
-                    <SwiperSlide className='routingButtonsContainer'>
-                        <Link className='routingButtons' to='/SliderList'>Slider lists</Link>
+                    <SwiperSlide>
+                        <Link className='routingButtons' to='/SliderList'><p>Slider lists</p></Link>
                     </SwiperSlide>
 
-                    <SwiperSlide className='routingButtonsContainer'>
-                        <Link className='routingButtons' to='/Codex'>Lore Codex</Link>
+                    <SwiperSlide>
+                        <Link className='routingButtons' to='/Codex'><p>Lore Codex</p></Link>
                     </SwiperSlide>
 
-                    <SwiperSlide className='routingButtonsContainer'>
-                        <Link className='routingButtons' to='/ToDoList1'>Update To Do List</Link>
+                    <SwiperSlide>
+                        <Link className='routingButtons' to='/ToDoList1'><p>Update To Do List</p></Link>
                     </SwiperSlide>
 
-                    <SwiperSlide className='routingButtonsContainer'>
-                        <Link className='routingButtons' to='/ToDoList2'>Add to To Do List</Link>
+                    <SwiperSlide>
+                        <Link className='routingButtons' to='/ToDoList2'><p>Add to To Do List</p></Link>
                     </SwiperSlide>
 
-                    <SwiperSlide className='routingButtonsContainer'>
-                        <Link className='routingButtons' to='/ToDoList3'>Simple To Do List</Link>
+                    <SwiperSlide>
+                        <Link className='routingButtons' to='/ToDoList3'><p>Simple To Do List</p></Link>
                     </SwiperSlide>
 
-                    <SwiperSlide className='routingButtonsContainer'>
-                        <Link className='routingButtons' to='/Animations'>Animations</Link>
+                    <SwiperSlide>
+                        <Link className='routingButtons' to='/Animations1'><p>Animated folder</p></Link>
+                    </SwiperSlide>
+
+                    <SwiperSlide>
+                        <Link className='routingButtons' to='/Animations2'><p>Animated buttons</p></Link>
                     </SwiperSlide>
 
                 </Swiper>      

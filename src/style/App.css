@@ -349,15 +349,12 @@
   background-color: white;
 }
 
-.animations p {
-  text-align: left;
-}
-
 .btnSpacing {
   height: 5px;
   width: 100%;
   background-color: black;
   margin: 250px 0;
+  text-align: left;
 }
 
 .btnWallpaper {
@@ -378,11 +375,9 @@
 .btnWallpaperContainer {
   height: 400px;
   width: 300px;
-  margin-bottom: 210px;
+  margin: 0 auto 250px auto;
   overflow: hidden;
   cursor: pointer;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .wallpaperContainerUI {
@@ -428,11 +423,11 @@
 
 .wallpaperLeftUI {
   position: absolute;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
   height: 434px;
   margin-top: 10px;
   margin-left: 221px;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
 }
 
 #wallpaperLeftOut {
@@ -441,13 +436,13 @@
 
 .wallpaperRightUI {
   position: absolute;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
   height: 434px;
   margin-top: 10px;
   margin-left: 510px;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
 }
 
 #wallpaperRightOut {
@@ -456,10 +451,10 @@
 
 .wallpaperTopUI {
   position: absolute;
-  -webkit-transform: scaleY(-1);
-          transform: scaleY(-1);
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
   width: 310px;
   margin-left: 240px;
   margin-top: 5px;
@@ -467,10 +462,10 @@
 
 .wallpaperTopUI2 {
   position: absolute;
-  -webkit-transform: scaleY(-1);
-          transform: scaleY(-1);
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
   -webkit-transition-delay: .3s;
           transition-delay: .3s;
   width: 310px;
@@ -508,10 +503,10 @@
 
 .wallpaperTopLeftUI {
   position: absolute;
-  -webkit-transform: scale(1, -1);
-          transform: scale(1, -1);
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
   width: 157px;
   margin-left: 240px;
   margin-top: 4px;
@@ -519,15 +514,15 @@
 
 #wallpaperTopLeftOut {
   margin-top: -205px;
-  margin-left: 100px;
+  margin-left: 60px;
 }
 
 .wallpaperTopRightUI {
   position: absolute;
-  -webkit-transform: scale(-1, -1);
-          transform: scale(-1, -1);
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
   width: 157px;
   margin-left: 394px;
   margin-top: 4px;
@@ -535,84 +530,127 @@
 
 #wallpaperTopRightOut {
   margin-top: -205px;
-  margin-left: 534px;
+  margin-left: 584px;
 }
 
 .wallpaperBottomLeftUI {
   position: absolute;
-  -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
   width: 157px;
   margin-left: 240px;
   margin-top: 420px;
 }
 
 #wallpaperBottomLeftOut {
-  margin-top: 598px;
-  margin-left: 100px;
+  margin-top: 630px;
+  margin-left: 60px;
 }
 
 .wallpaperBottomRightUI {
   position: absolute;
-  -webkit-transform: scale(-1, 1);
-          transform: scale(-1, 1);
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
   width: 157px;
   margin-left: 394px;
   margin-top: 420px;
 }
 
 #wallpaperBottomRightOut {
-  margin-top: 598px;
-  margin-left: 534px;
+  margin-top: 630px;
+  margin-left: 584px;
 }
 
 .wallpaperBackgroundLeft {
   position: absolute;
-  width: 0px;
-  height: 350px;
-  background-color: red;
-  border-radius: 5px;
-  margin-top: 52px;
-  margin-left: 231px;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
   -webkit-transition-delay: .0s;
           transition-delay: .0s;
   opacity: .3;
+  border-radius: 5px;
+  width: 0px;
+  height: 350px;
+  margin-top: 52px;
+  margin-left: 231px;
 }
 
 #wallpaperBackgroundLeftOut {
   width: 620px;
   margin-top: 52px;
   margin-left: -390px;
-  -webkit-transition-delay: .2s;
-          transition-delay: .2s;
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
 }
 
 .wallpaperBackgroundRight {
   position: absolute;
-  width: 10px;
-  height: 350px;
-  background-color: red;
-  border-radius: 5px;
-  margin-top: 52px;
-  margin-left: 560px;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
   -webkit-transition-delay: .0s;
           transition-delay: .0s;
   opacity: .3;
+  border-radius: 5px;
+  width: 0px;
+  height: 350px;
+  margin-top: 52px;
+  margin-left: 560px;
 }
 
 #wallpaperBackgroundRightOut {
   width: 620px;
   margin-top: 52px;
-  -webkit-transition-delay: .2s;
-          transition-delay: .2s;
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+}
+
+.wallpaperBackgroundTop {
+  position: absolute;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  -webkit-transition-delay: .0s;
+          transition-delay: .0s;
+  opacity: .3;
+  border-radius: 5px;
+  width: 620px;
+  height: 0px;
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+  margin-top: 10px;
+  margin-left: 90px;
+}
+
+#wallpaperBackgroundTopOut {
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
+  height: 200px;
+  margin-top: -190px;
+}
+
+.wallpaperBackgroundBottom {
+  position: absolute;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  -webkit-transition-delay: .0s;
+          transition-delay: .0s;
+  opacity: .3;
+  border-radius: 5px;
+  width: 620px;
+  height: 0px;
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+  margin-top: 445px;
+  margin-left: 90px;
+}
+
+#wallpaperBackgroundBottomOut {
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
+  height: 200px;
 }
 
 .App {
@@ -620,6 +658,8 @@
   background-image: linear-gradient(to right, #6e6e6e, #3d3d3d);
   padding-bottom: 200px;
   color: white;
+  margin-top: -100px;
+  padding-top: 200px;
 }
 
 .pageHeaderText {
@@ -640,8 +680,8 @@
 
 .pageParaText {
   text-align: center;
-  width: 60%;
-  margin: 100px 20%;
+  width: 80%;
+  margin: 100px 10%;
   border-radius: 20px;
   padding: 15px;
   font-size: 20px;
@@ -657,7 +697,11 @@
 }
 
 .headerContainer {
+  position: fixed;
+  margin-top: -100px;
+  width: 100%;
   background-color: #10133a;
+  z-index: 2;
 }
 
 .header {
@@ -683,10 +727,11 @@
   font-weight: bolder;
   text-decoration: none;
   font-size: larger;
+  text-align: center;
 }
 
-.routingButtonsContainer {
-  margin-top: 20px;
+.routingButtons p {
+  width: 200px;
 }
 
 .homeButton {

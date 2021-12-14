@@ -6,3 +6,17 @@ $shadow: 3px 4px 6px 5px rgba(0, 0, 0, 0.349);
     border-radius: 30px;
     min-width: 800px;
 }
+
+// Animations 1 Wallpaper
+@mixin wallpaperUI {
+    position: absolute;
+    transition: all .5s ease;
+}
+
+@mixin wallpaperBackground {
+    position: absolute;
+    transition: all .3s ease;
+    transition-delay: .0s;
+    opacity: .3 ;
+    border-radius: 5px;
+}

@@ -10,7 +10,8 @@ import Codex from "./pages/Codex";
 import ToDoList1 from "./pages/ToDoList1";
 import ToDoList2 from "./pages/ToDoList2";
 import ToDoList3 from "./pages/ToDoList3";
-import Animations from "./pages/Animations";
+import Animations1 from "./pages/Animations1";
+import Animations2 from "./pages/Animations2";
 
 function App() {
   return (
@@ -27,7 +28,8 @@ function App() {
         <Route exact path='/ToDoList1' component={ToDoList1}/>
         <Route exact path='/ToDoList2' component={ToDoList2}/>
         <Route exact path='/ToDoList3' component={ToDoList3}/>
-        <Route exact path='/Animations' component={Animations}/>
+        <Route exact path='/Animations1' component={Animations1}/>
+        <Route exact path='/Animations2' component={Animations2}/>
       </BrowserRouter>
 
     </div>

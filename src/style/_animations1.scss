@@ -1,12 +1,9 @@
-.animations p {
-    text-align: left;
-}
-
 .btnSpacing {
     height: 5px;
     width: 100%;
     background-color: black;
     margin: 250px 0;
+    text-align: left;
 }
 
 // Wallpaper
@@ -22,11 +19,9 @@
 .btnWallpaperContainer {
     height: 400px;
     width: 300px;
-    margin-bottom: 250px;
+    margin: 0 auto 250px auto;
     overflow: hidden;
     cursor: pointer;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .wallpaperContainerUI {
@@ -63,11 +58,10 @@
 
 // Wallpaper UI
 .wallpaperLeftUI {
-    position: absolute;
+    @include wallpaperUI;
     height: 434px;
     margin-top: 10px;
     margin-left: 221px;
-    transition: all .5s ease;
 }
 
 #wallpaperLeftOut {
@@ -75,12 +69,11 @@
 }
 
 .wallpaperRightUI {
-    position: absolute;
+    @include wallpaperUI;
+    transform: scaleX(-1);
     height: 434px;
     margin-top: 10px;
     margin-left: 510px;
-    transform: scaleX(-1);
-    transition: all .5s ease;
 }
 
 #wallpaperRightOut {
@@ -88,18 +81,16 @@
 }
 
 .wallpaperTopUI {
-    position: absolute;
+    @include wallpaperUI;
     transform: scaleY(-1);
-    transition: all .5s ease;
     width: 310px;
     margin-left: 240px;
     margin-top: 5px;
 }
 
 .wallpaperTopUI2 {
-    position: absolute;
+    @include wallpaperUI;
     transform: scaleY(-1);
-    transition: all .5s ease;
     transition-delay: .3s;
     width: 310px;
     margin-left: 240px;
@@ -111,16 +102,14 @@
 }
 
 .wallpaperBottomUI {
-    position: absolute;
-    transition: all .5s ease;
+    @include wallpaperUI;
     width: 310px;
     margin-left: 240px;
     margin-top: 404px;
 }
 
 .wallpaperBottomUI2 {
-    position: absolute;
-    transition: all .5s ease;
+    @include wallpaperUI;
     transition-delay: .3s;
     width: 310px;
     margin-left: 240px;
@@ -131,11 +120,10 @@
     margin-top: 598px;
 }
 
-//Moving corner horizontal UI borders 
+//Wallpaper UI v2
 .wallpaperTopLeftUI {
-    position: absolute;
+    @include wallpaperUI;
     transform: scale(1, -1);
-    transition: all .5s ease;
     width: 157px;
     margin-left: 240px;
     margin-top: 4px;
@@ -147,9 +135,8 @@
 }
 
 .wallpaperTopRightUI {
-    position: absolute;
+    @include wallpaperUI;
     transform: scale(-1, -1);
-    transition: all .5s ease;
     width: 157px;
     margin-left: 394px;
     margin-top: 4px;
@@ -161,9 +148,8 @@
 }
 
 .wallpaperBottomLeftUI {
-    position: absolute;
+    @include wallpaperUI;
     transform: scale(1, 1);
-    transition: all .5s ease;
     width: 157px;
     margin-left: 240px;
     margin-top: 420px;
@@ -175,9 +161,8 @@
 }
 
 .wallpaperBottomRightUI {
-    position: absolute;
+    @include wallpaperUI;
     transform: scale(-1, 1);
-    transition: all .5s ease;
     width: 157px;
     margin-left: 394px;
     margin-top: 420px;
@@ -190,15 +175,11 @@
 
 // Wallpaper background
 .wallpaperBackgroundLeft {
-    position: absolute;
+    @include wallpaperBackground;
     width: 0px;
     height: 350px;
-    border-radius: 5px;
     margin-top: 52px;
     margin-left: 231px;
-    transition: all .3s ease;
-    transition-delay: .0s;
-    opacity: .3 ;
 }
 
 #wallpaperBackgroundLeftOut {
@@ -209,15 +190,11 @@
 }
 
 .wallpaperBackgroundRight {
-    position: absolute;
+    @include wallpaperBackground;
     width: 0px;
     height: 350px;
-    border-radius: 5px;
     margin-top: 52px;
     margin-left: 560px;
-    transition: all .3s ease;
-    transition-delay: .0s;
-    opacity: .3 ;
 }
 
 #wallpaperBackgroundRightOut {
@@ -227,16 +204,12 @@
 }
 
 .wallpaperBackgroundTop {
-    position: absolute;
+    @include wallpaperBackground;
     width: 620px;
     height: 0px;
     transform: scaleY(-1);
-    border-radius: 5px;
     margin-top: 10px;
     margin-left: 90px;
-    transition: all .3s ease;
-    transition-delay: .0s;
-    opacity: .3 ;
 }
 
 #wallpaperBackgroundTopOut {
@@ -246,16 +219,12 @@
 }
 
 .wallpaperBackgroundBottom {
-    position: absolute;
+    @include wallpaperBackground;
     width: 620px;
     height: 0px;
     transform: scaleY(-1);
-    border-radius: 5px;
     margin-top: 445px;
     margin-left: 90px;
-    transition: all .3s ease;
-    transition-delay: .0s;
-    opacity: .3 ;
 }
 
 #wallpaperBackgroundBottomOut {
