@@ -5,6 +5,7 @@ import wallpaperUI from "../images/wallpaperUI.png"
 import wallpaperVerticalUI from "../images/wallpaperVerticalUI.png"
 import wallpaperHorizontalUI from "../images/wallpaperHorizontalUI.png"
 import wallpaperHorizontalHalfUI from "../images/wallpaperHorizontalHalfUI.png"
+import wallpaperBackground from "../images/wallpaperBackground.png"
 
 const Animations = () => {
     const [imgIsZoomed1, setImgIsZoomed1] = useState(false);
@@ -121,12 +122,15 @@ const Animations = () => {
                 </div>
                 <div>
 
-                    <div className='wallpaperBackgroundTop' id={imgIsZoomed6 ? "wallpaperBackgroundTopOut" : "" } />
-
                     <img className="wallpaperTopLeftUI" src={wallpaperHorizontalHalfUI} id={imgIsZoomed6 ? "wallpaperTopLeftOut" : "" } />
                     <img className="wallpaperTopRightUI" src={wallpaperHorizontalHalfUI} id={imgIsZoomed6 ? "wallpaperTopRightOut" : "" } />
                     <img className="wallpaperBottomLeftUI" src={wallpaperHorizontalHalfUI} id={imgIsZoomed6 ? "wallpaperBottomLeftOut" : "" } />
                     <img className="wallpaperBottomRightUI" src={wallpaperHorizontalHalfUI} id={imgIsZoomed6 ? "wallpaperBottomRightOut" : "" } />
+
+                    <img className='wallpaperBackgroundTop' src={wallpaperBackground} id={imgIsZoomed6 ? "wallpaperBackgroundTopOut" : "" } />
+                    <img className='wallpaperBackgroundLeft' src={wallpaperBackground} id={imgIsZoomed6 ? "wallpaperBackgroundLeftOut" : "" } />
+                    <img className='wallpaperBackgroundRight' src={wallpaperBackground} id={imgIsZoomed6 ? "wallpaperBackgroundRightOut" : "" } />
+                    <img className='wallpaperBackgroundBottom' src={wallpaperBackground} id={imgIsZoomed6 ? "wallpaperBackgroundBottomOut" : "" } />
 
                     <img className="wallpaperRightUI" src={wallpaperVerticalUI} id={imgIsZoomed6 ? "wallpaperRightOut" : "" } />
                     <img className="wallpaperLeftUI" src={wallpaperVerticalUI} id={imgIsZoomed6 ? "wallpaperLeftOut" : "" } />

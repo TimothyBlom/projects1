@@ -22,7 +22,7 @@
 .btnWallpaperContainer {
     height: 400px;
     width: 300px;
-    margin-bottom: 210px;
+    margin-bottom: 250px;
     overflow: hidden;
     cursor: pointer;
     margin-left: auto;
@@ -84,7 +84,7 @@
 }
 
 #wallpaperRightOut {
-    margin-left: 1182px;
+    margin-left: 1140px;
 }
 
 .wallpaperTopUI {
@@ -143,7 +143,7 @@
 
 #wallpaperTopLeftOut {
     margin-top: -205px;
-    margin-left: 100px;
+    margin-left: 60px;
 }
 
 .wallpaperTopRightUI {
@@ -157,7 +157,7 @@
 
 #wallpaperTopRightOut {
     margin-top: -205px;
-    margin-left: 534px;
+    margin-left: 584px;
 }
 
 .wallpaperBottomLeftUI {
@@ -170,8 +170,8 @@
 }
 
 #wallpaperBottomLeftOut {
-    margin-top: 598px;
-    margin-left: 100px;
+    margin-top: 630px;
+    margin-left: 60px;
 }
 
 .wallpaperBottomRightUI {
@@ -184,24 +184,81 @@
 }
 
 #wallpaperBottomRightOut {
-    margin-top: 598px;
-    margin-left: 534px;
+    margin-top: 630px;
+    margin-left: 584px;
 }
 
 // Wallpaper background
-.wallpaperBackgroundTop {
+.wallpaperBackgroundLeft {
     position: absolute;
     width: 0px;
     height: 350px;
-    background-color: red;
     border-radius: 5px;
-    margin: 52px 0 0 480px;
-    transition: all .5s ease;
+    margin-top: 52px;
+    margin-left: 231px;
+    transition: all .3s ease;
     transition-delay: .0s;
+    opacity: .3 ;
+}
+
+#wallpaperBackgroundLeftOut {
+    width: 620px;
+    margin-top: 52px;
+    margin-left: -390px;
+    transition-delay: .3s;
+}
+
+.wallpaperBackgroundRight {
+    position: absolute;
+    width: 0px;
+    height: 350px;
+    border-radius: 5px;
+    margin-top: 52px;
+    margin-left: 560px;
+    transition: all .3s ease;
+    transition-delay: .0s;
+    opacity: .3 ;
+}
+
+#wallpaperBackgroundRightOut {
+    width: 620px;
+    margin-top: 52px;
+    transition-delay: .3s;
+}
+
+.wallpaperBackgroundTop {
+    position: absolute;
+    width: 620px;
+    height: 0px;
+    transform: scaleY(-1);
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 90px;
+    transition: all .3s ease;
+    transition-delay: .0s;
+    opacity: .3 ;
 }
 
 #wallpaperBackgroundTopOut {
+    transition-delay: .5s;
+    height: 200px;
+    margin-top: -190px;
+}
+
+.wallpaperBackgroundBottom {
+    position: absolute;
     width: 620px;
-    margin: 52px 0 0 -140px;
-    transition-delay: .2s;
+    height: 0px;
+    transform: scaleY(-1);
+    border-radius: 5px;
+    margin-top: 445px;
+    margin-left: 90px;
+    transition: all .3s ease;
+    transition-delay: .0s;
+    opacity: .3 ;
+}
+
+#wallpaperBackgroundBottomOut {
+    transition-delay: .5s;
+    height: 200px;
 }

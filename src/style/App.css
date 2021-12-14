@@ -436,7 +436,7 @@
 }
 
 #wallpaperLeftOut {
-  margin-left: -185px;
+  margin-left: -410px;
 }
 
 .wallpaperRightUI {
@@ -451,7 +451,7 @@
 }
 
 #wallpaperRightOut {
-  margin-left: 917px;
+  margin-left: 1140px;
 }
 
 .wallpaperTopUI {
@@ -568,6 +568,51 @@
 #wallpaperBottomRightOut {
   margin-top: 598px;
   margin-left: 534px;
+}
+
+.wallpaperBackgroundLeft {
+  position: absolute;
+  width: 0px;
+  height: 350px;
+  background-color: red;
+  border-radius: 5px;
+  margin-top: 52px;
+  margin-left: 231px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-transition-delay: .0s;
+          transition-delay: .0s;
+  opacity: .3;
+}
+
+#wallpaperBackgroundLeftOut {
+  width: 620px;
+  margin-top: 52px;
+  margin-left: -390px;
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
+}
+
+.wallpaperBackgroundRight {
+  position: absolute;
+  width: 10px;
+  height: 350px;
+  background-color: red;
+  border-radius: 5px;
+  margin-top: 52px;
+  margin-left: 560px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-transition-delay: .0s;
+          transition-delay: .0s;
+  opacity: .3;
+}
+
+#wallpaperBackgroundRightOut {
+  width: 620px;
+  margin-top: 52px;
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
 }
 
 .App {
