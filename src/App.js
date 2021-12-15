@@ -1,6 +1,7 @@
 import './style/App.scss';
 import { BrowserRouter, Route } from "react-browser-router";
 import Header from "./components/Header";
+import ScrollBar from "./components/ScrollBar";
 import Home from "./pages/Home";
 import Countdown from "./pages/Countdown";
 import ImgUploader from "./pages/ImgUploader";
@@ -19,6 +20,7 @@ function App() {
       
       <BrowserRouter>
         <Header />
+        <ScrollBar />
         <Route exact path='/' component={Home}/>
         <Route exact path='/Countdown' component={Countdown}/>
         <Route exact path='/ImgUploader' component={ImgUploader}/>

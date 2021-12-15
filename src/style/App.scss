@@ -6,6 +6,7 @@
 @import "./codex";
 @import "./variables";
 @import "./animations1";
+@import "./scrollBar";
 
 .App {
   background-image: linear-gradient(to right, rgb(110, 110, 110), rgb(61, 61, 61));
@@ -49,6 +50,21 @@
   z-index: 2;
 }
 
+.headerLogo {
+  height: 70px;
+  float: left;
+  margin: 0 -120px 0 -30px;
+  padding: 0 20px 0 30px;
+  border-radius: 20px;
+}
+
+.menuLogo {
+  width: 50px;
+  float: right;
+  margin-top: -60px;
+  margin-right: 25px;
+}
+
 .header {
   margin-left: 350px;
   margin-right: 100px;
@@ -57,14 +73,6 @@
 
 .headerSwiper {
   height: 70px;
-}
-
-.headerLogo {
-  height: 70px;
-  float: left;
-  margin: 0 -120px 0 -30px;
-  padding: 0 20px 0 30px;
-  border-radius: 20px;
 }
 
 .routingButtons {

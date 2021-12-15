@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, EffectCoverflow } from 'swiper';
 import 'swiper/swiper-bundle.css';
 import headerLogo from "../images/3DLogo.png"
+import menuLogo from "../images/addButton.png"
 
 const Header = () => {
     return (
@@ -65,7 +66,13 @@ const Header = () => {
                     </SwiperSlide>
 
                 </Swiper>      
+
             </div>
+
+            <div className='settingsBtn'>            
+                <img className="menuLogo" src={menuLogo} />
+            </div>
+
         </div>
     )
 };
